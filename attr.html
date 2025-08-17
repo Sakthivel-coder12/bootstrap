@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery attr() Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>jQuery attr() Demo</h2>
+
+<img id="logo" src="https://picsum.photos/200" alt="Sample Image">
+
+<br><br>
+<button id="getAttr">Get Image SRC</button>
+<button id="setAttr">Change Image SRC</button>
+
+<script>
+  // ✅ Get attribute
+  $("#getAttr").click(function() {
+    let src = $("#logo").attr("src");
+    alert("Current image source: " + src);
+  });
+
+  // ✅ Set attribute
+  $("#setAttr").click(function() {
+    // $("#logo").attr("src", "https://picsum.photos/200?grayscale");
+    $("logo").attr("width","200px");
+  });
+</script>
+
+</body>
+</html>
